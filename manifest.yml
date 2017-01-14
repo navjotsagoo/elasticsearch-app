@@ -1,0 +1,7 @@
+---
+applications:
+- name: elasticapp
+  buildpack: java_buildpack
+  memory: 1G
+  random-route: true
+  path: target/elasticsearch-app-0.0.2-SNAPSHOT.jar
