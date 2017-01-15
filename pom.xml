@@ -71,6 +71,10 @@
 			<artifactId>log4j-core</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>io.searchbox</groupId>
+			<artifactId>jest</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
