@@ -1,4 +1,4 @@
-package io.pivotal;
+/*package io.pivotal;
 
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 import io.searchbox.client.JestClient;
@@ -37,11 +37,11 @@ public class App {
 	
 	ObjectMapper mapper = JsonFactory.create();
 	
- /*   @SuppressWarnings("resource")
+    @SuppressWarnings("resource")
 	TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
     	.addTransportAddress(
     			new InetSocketTransportAddress(
-    					InetAddress.getByName(hostname), 80));*/
+    					InetAddress.getByName(hostname), 80));
 	
 	JestClientFactory factory = new JestClientFactory();
 	factory.setHttpClientConfig(new HttpClientConfig
@@ -52,9 +52,9 @@ public class App {
 	JestClient client = factory.getObject();
     
     Spark.post("/save", (request, response) -> { 
-    	/*StringBuilder json = new StringBuilder("{");
+    	StringBuilder json = new StringBuilder("{");
     	json.append("\"name\":\""+request.raw().getParameter("name")+"\",");
-    	json.append("\"artist\":\""+request.raw().getParameter("artist")+"\"}");*/
+    	json.append("\"artist\":\""+request.raw().getParameter("artist")+"\"}");
     	
     	XContentBuilder builder = jsonBuilder()
     			.startObject()
@@ -89,3 +89,4 @@ public class App {
     
   }
 }
+*/
